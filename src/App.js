@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import NavbarComp from "./NavbarComp";
 
-function App() {
+import HeaderComp from "./HeaderComp";
+
+import SectionComp from "./SectionComp";
+
+import FooterComp from './FooterComp';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
+
+
+
+
+function App(props) {
+  const { notes } = props;
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+
+         <NavbarComp/>
+
+          <HeaderComp />
+
+          <SectionComp notes={notes}/>
+
+          <FooterComp />
+      </div>
   );
 }
 
