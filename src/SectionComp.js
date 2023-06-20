@@ -30,10 +30,8 @@ function SectionComp(props) {
             }
         }
 }
-
-
-    function ProductName({ notes }) {
-        if (notes.name !== 'Fancy Product') {
+function ProductName({ notes }) {
+        if (notes.name !== 'Fancy Product' || notes.name !== 'sale Item' ) {
             return (
                 <div className="col mb-5">
                     <div className="card h-100">
@@ -46,7 +44,7 @@ function SectionComp(props) {
                             <div className="text-center">
 
 
-                                <h5 className="fw-bolder">{notes.name}</h5>
+                                <h3 className="fw-bolder">{notes.name}</h3>
 
                                 <div className="d-flex justify-content-center small text-warning mb-2">
                                     <div>{notes.star}</div>
@@ -80,8 +78,7 @@ function SectionComp(props) {
                             <div className="text-center">
 
 
-                                <h5 className="fw-bolder">{notes.name}</h5>
-
+                                <h3 className="fw-bolder">{notes.name}</h3>
                                 {notes.price1}
                                 {notes.price2}
                             </div>
