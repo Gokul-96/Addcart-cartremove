@@ -21,6 +21,7 @@ function NavbarComp() {
                 </li>
             </ul>
             <div id="cart">
+                {/* initially 0 */}
                 <form className="d-flex">
                     <button className="btn btn-outline-dark"  >
                         <i className="bi-cart-fill me-1"></i>
